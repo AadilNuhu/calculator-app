@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(222, 26%, 31%);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: sans-serif;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.top h1{
+    padding: 0 30px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+}
+
+.slider-container p{
+    padding: 0 15px;
+    color: #fff;
+}
+
+#slider {
+    width: 35%;
+    -webkit-appearance: none;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+#slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 20px;
+    padding: 5px;
+    background: hsl(224, 36%, 15%);
+    border-radius: 10px;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+    position: relative;
+    z-index: 0;
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    padding: 0px 0 10px;
+    color: #f9f9f9;
+}
+
+.label[data-value="0"] {
+    left: 0;
+}
+
+.label[data-value="1"] {
+    left: 17%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.label[data-value="2"] {
+    left: 27%;
+}
+
+.items{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 600px;
+    width: 550px;
+}
+
+.input{
+    width: 80%;
+    align-items: center;
+    margin: 30px 30px;
+    height: 90px;
+    border-radius: 10px;
+    background-color:  hsl(224, 36%, 15%);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: right;
+    padding: 0 20px;
+}
+
+.buttons{
+    background-color:  hsl(223, 31%,20%);
+    width: 80%;
+    height: 350px;
+    margin: 0px 30px;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+.buttons .row1{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons .row1 button{
+    padding: 0px;
+    margin: 10px 0;
+    width: 80px;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 0px 1px 1px hsl(224, 28%, 35%);
+}
+
+button.btn{
+    background-color: hsl(30, 25%, 89%);
+
+}
+
+button.del{
+    background-color: hsl(225, 21%, 49%);
+    color: #fff;
+}
+
+button.reset{
+    background-color: hsl(225, 21%, 49%);
+    color: #fff;
+}
+button.equal{
+    background-color: hsl(6, 63%, 50%);
+    color: #fff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row button{
+    padding: 10px;
+    width: 185px;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ###################### toggle ############### */
+/* Styles when the slider value is 1 */
+.background-white {
+    background-color: #ccc;
+}
+
+.slider-white {
+    background-color: white;
+}
+
+/* Styles when the slider value is 2 */
+.background-hsl {
+    background-color: hsl(281, 89%, 26%);
+}
+
+.slider-hsl {
+    background-color: hsl(281, 89%, 26%);
+}
